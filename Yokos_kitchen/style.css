@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+body{
+    background-image: url('img/dark-wood.jpg');
+font-family: Georgia, 'Times New Roman', Times, serif 200 300;
+color:rgb(80, 78, 78);
+}
+
+.wrapper{
+    background-color: white;
+    width: 70%;
+    margin: 15px auto 3px auto;
+}
+header{
+    height:auto;
+    background-image: url('img/header.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 120px; 
+
+}
+nav{
+    margin-top:45px;
+    background-color:rgb(192, 188, 183);
+    padding:5px;
+
+}
+nav ul li{
+    display: inline;
+    padding:20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+li .current{
+    color:black;
+}
+.courses{
+    float:left;
+    width: 70%;
+    border-right: 1px solid rgb(212, 210, 210);
+    margin-bottom: 10px;
+}
+figure{
+    background-color: white;
+    border: 1px solid rgb(224, 222, 222);
+    padding: 6px;
+    float:left; 
+    margin:20px;  
+    margin-right: 10px;  
+}
+article hgroup, article p{
+    float:right;
+   margin-top: 40px;
+   width:calc(50% - 30px);
+   margin-right: 5px;
+}
+article hgroup h2{
+    font-weight: 200;
+}
+article hgroup h3{
+    color: rgb(247, 66, 66);
+font-weight: 200; 
+    
+
+}
+aside{
+    float: left;
+    margin-left: 10px;
+    margin-top: 45px; 
+    width: 25%;
+
+}
+.popular-recipes{
+    color: rgb(224, 44, 44);
+    padding-left: 15px;
+    
+}
+.popular-recipes h2{
+font-weight: 200; 
+margin-bottom: 10px;
+}
+.popular-recipes a{
+ text-decoration: none;
+ display: block;
+ font-size: 17.5px;
+ color: rgb(224, 44, 44);
+ border-bottom: 1px solid rgb(241, 214, 214);
+padding:12px 5px;
+}
+.popular-recipes h2+a{
+    background-color: rgb(228, 224, 224);
+    color: rgb(197, 36, 36);
+}
+.contact-details{
+    margin-top:30px;
+    padding-left: 15px;
+}
+.contact-details h2{
+ color: rgb(224, 44, 44);
+font-weight: 300; 
+margin-bottom: 30px;
+}
+.contact-details p{
+    font-size: 18px;
+}
+footer{
+  padding: 10px;
+  background-color:rgb(175, 171, 166);
+  padding-left: 20px;
+  color: white;
+  width: 100%;
+}
+.clear{
+    clear: both;
+}
+
+@media only screen and (max-width:768px){
+ body{
+     background-image: none;
+     width: 100%;
+     padding:0;
+ }
+    .wrapper{
+        margin:0;
+        padding:0;
+        width:100%;
+        
+    }
+    header{
+        background-image: none;
+        height:auto;
+        width: 100%;
+        padding: 0;
+        margin:0;
+        position: relative;
+    }
+    header #dugmeid{
+        background-color:rgb(131, 130, 130);
+        position: absolute;
+        right: 13px;
+        top: 80px;
+        padding:5px 3px;
+        height: 30px;
+    }
+    header #dugmeid .icon-bar{
+        border-bottom:1px solid white;
+        width: 25px;
+        margin: 4px;
+    }
+    header .back-image{
+        background-image: url('img/header.jpg');
+        padding-top:130px;
+    }
+    nav{
+        margin:0;
+        padding:0;
+        max-height: 0px;
+        transition: max-height 2s;
+        overflow: hidden;
+    }
+    nav ul li{
+       display:block;
+       text-align: center;
+       border-bottom: 1px solid white;
+       padding:10px 0px;
+       width: 100%;
+    }
+    .courses{
+        width: 100%;
+        border:none;
+    }
+    .courses article figure{
+        width: 100%;
+        margin:0;
+        border:none;
+        position: relative;
+    }
+    img{
+        width: 100%;
+    }
+    figcaption{
+        position: absolute;
+        bottom:10px;
+        text-shadow: 1px 1px white;
+        left:10px;
+    }
+  article hgroup,article p{
+        width: 100%;
+        margin:0;
+        padding-left: 10px;
+    /* float: none; */
+    }
+    article p{
+        padding-bottom: 20px;
+    }
+  aside{
+      width: 100%;
+  }
+  footer{
+      width:100%;
+      text-align: center;
+      margin-top:10px;
+  }
+}

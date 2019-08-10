@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+body{
+    font-family: 'Poppins';
+}
+nav{
+    background-color: rgb(244,67,54);
+    width:20%;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    color: white;
+    font-weight: bold;
+}
+hr{
+    width: 40px;
+    background-color: rgb(244,67,54);
+    height: 8px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+#IzbornikDugme{
+    display: none;
+}
+nav div:hover{
+  cursor: pointer;
+  background-color: rgb(236, 59, 46);
+}
+#Izbornik{
+    transition: max-height 0.5s;
+}
+.IzbornikStavka{
+    text-decoration: none;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 13px;
+    color: white;
+}
+#wrapper{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px 45px;
+}
+#header{
+    margin-bottom: 100px;
+}
+#header h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 35px;
+   font-weight: 500;
+   color:  rgb(244,67,54);;
+}
+p{
+    margin:15px 0px 20px 0px;
+}
+.Kontejner{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.SlikaKolona{
+    width: calc((100% - 30px)/2);
+    float: left;
+}
+.SlikaKolona:first-child{
+    margin-right: 20px;
+}
+.SlikaKolona img{
+    width: 100%;
+}
+.TeamKolona{
+    margin-right: 20px;
+    width: calc((100% - 60px)/4);
+    float: left;
+}
+.TeamKolona img{
+    width: 100%;
+    border:2px solid black;
+}
+.TeamKolona div div{
+    background-color: rgb(241,241,241);
+    padding: 10px 15px 0px 10px;
+}
+.TeamKolona h3{
+    font-size: 23px;
+}
+.RadnaPozicija{
+    color:rgb(128,128,128);
+}
+
+.PaketiDiv{
+    width:100%;
+    margin-bottom: 20px;
+}
+.PaketKolona{
+    float: left;
+    width: calc((100% - 20px)/2);
+}
+.PaketKolona li{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px 0px;
+    background-color: rgb(241,241,241);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+.PaketKolona li:first-child{
+    background-color: rgb(128,128,128);
+    color:white;
+    border:none;
+    padding:28px;
+    font-size: 20px;
+}
+.BtnSignUp{
+    outline: none;
+    padding:10px;
+    background-color: white;
+   border:none;
+}
+button:hover{
+    cursor: pointer;
+    font-size: 15px;
+}
+button:active{
+    transform: translateY(2px);
+
+}
+input{
+    display: block;
+    width:99%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.BtnSend{
+    width:99%;
+    background-color: rgb(244,67,54);
+    color:white;
+    text-align: center;
+    border:none;
+    outline: none;
+    padding:15px;
+}
+.clear{
+    clear: both;
+}
+@media only screen and (max-width:700px){
+
+   nav{
+       width: 95%;
+       position: static;
+       text-align: center;
+       padding:40px;
+       margin:0px;
+   }
+   #IzbornikDugme{
+       display: inline;
+       padding-left: 30px;
+       margin-right: 10px;
+   }
+   #Izbornik{
+    background-color:rgba(250, 232, 231, 0.5);
+    width: 100%;
+    
+   }
+   .IzbornikStavka{
+       margin:0px;
+       padding:10px;
+       border-bottom: 1px solid white;
+   }
+   #wrapper{
+       width: 95%;
+       margin:0px;
+       padding: 40px;
+   }
+   .SlikaKolona{
+       width:100%;
+   }
+   .TeamKolona{
+       width: calc((100% - 40px)/2);
+   }
+   .PaketKolona{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   input{
+       width: 99%;
+       
+   }
+}

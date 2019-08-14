@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    color: white;
+    background-color: rgb(27, 95, 194);
+    width: 30%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+}
+
+#IzbornikDugme{
+    display: none;
+}
+#Izbornik{
+    padding: 0px 10px;
+}
+.IzbornikStavka{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+
+}
+.IzbornikStavka:hover{
+    cursor: pointer;
+    background-color: rgb(54,125,229);
+}
+#wrapper{
+    width: 70%;
+    margin-left: 30%;
+    padding: 30px 5%;
+}
+#wrapper h1{
+    font-weight: 100;
+    font-size: 40px;
+}
+hr{
+    width: 40px;
+    margin:20px 0px 5px;
+}
+.Kontejner{
+    width: 100%;
+}
+.VilaKolonaWrapper{
+    margin:15px;
+    width: calc((100% - 90px)/3);
+    float:left;
+    text-align: center;
+}
+.VilaKolonaWrapper h3{
+    font-weight: 100;
+}
+.VilaKolonaWrapper h4{
+    font-size: 14px;
+  margin:20px;
+}
+.VilaKolonaOkvir{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.VilaKolonaOkvir:hover{
+    opacity:0.8;
+    cursor: pointer;
+}
+.VilaOpis{
+    font-size: 15px;
+    width:100%;
+}
+input[type=text]{
+    width: 100%;
+    padding:5px;
+    border: 1px solid rgb(184, 184, 184);
+    margin-bottom: 15px;
+
+}
+#Slika{
+    background-color: lightgrey;  
+}
+.KolonaTextbox{
+    float:left;
+    width: calc((100% - 0px)/3);
+}
+.KolonaTextbox input{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.BtnSend{
+    width: 100%;
+    background-color:  rgb(27, 95, 194);
+    color:white;
+    border:none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+}
+
+@media only screen and (max-width:600px){
+
+    body, .Kontejner,.VilaKolonaWrapper{
+        width: 100%;
+        margin:0%;
+    }
+    nav{
+        width: 100%;
+        position: static;
+        margin:0 !important;
+        padding: 0%;
+    }
+    nav div{
+        margin:0px !important;
+        padding: 4% 10%;
+
+    }
+    #IzbornikDugme{
+        display: inline;
+        padding-right: 5%;
+        margin:0%;
+        cursor: pointer;
+    }
+    #Izbornik{
+        padding:0% 2% 2% 2%;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+    .IzbornikStavka{
+        text-align: center;
+        border-bottom: 1px solid rgb(56, 113, 199);
+        padding:2%;
+    }
+    #wrapper{
+        width: 100%;
+        margin:0%;
+        padding:5% 10%;
+    }
+    .VilaKolonaWrapper{
+        margin-bottom: 30px;
+    }
+    .KolonaTextbox{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

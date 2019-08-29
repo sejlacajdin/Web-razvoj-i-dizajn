@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+ font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(27,95,194);
+    color:white;
+    font-weight: bold;
+}
+
+#IzbornikDugme{
+    display: none;
+}
+#Izbornik{
+padding: 10px;
+transition: height 1s;
+}
+.IzbornikStavka{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.IzbornikStavka:hover{
+    background-color: rgb(54,126,228);
+}
+#wrapper{
+    width: 70%;
+    margin-left: 30%;
+    padding:5%;
+    padding-top: 2%;
+}
+#wrapper h1{
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+hr{
+    width: 40px;
+    margin-bottom: 10px;
+}
+label[for="OdaberiVilu"]{
+    font-size: 15px;
+}
+.Kontejner{
+    width: 100%;
+    margin-top:10px;
+}
+
+.VilaKolonaWrapper{
+ width: calc((100% - 60px)/3);
+ margin: 10px;
+ float: left;
+ text-align: center;
+}
+
+.VilaKolonaOkvir{
+    width: 100%;
+}
+.VilaKolonaOkvir:hover{
+    opacity: 0.8;
+}
+.VilaKolonaWrapper h3{
+    font-weight: 100;
+    margin: 10px;
+    font-size: 20px;
+}
+.VilaKolonaWrapper h4{
+    font-size: 13px;
+    margin:20px;
+}
+.VilaOpis{
+    font-size: 13px;
+}
+
+#Prodaja{
+width: 100%;
+font-size: 15px;
+
+}
+#Prodaja form label{
+    display: block;
+    margin-top:15px;
+}
+#Prodaja input{
+    width: 100%;
+    padding: 5px;
+}
+input[type="button"]{
+    margin-bottom: 15px;
+}
+#tabelaID{
+    margin:15px 0px;
+}
+.clear{
+    clear: both;
+}
+
+@media only screen and (max-width:600px){
+    nav{
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    nav div{
+        margin-top:0px !important;
+        padding-top:20px;
+        padding-left: 30px;
+    }
+    #IzbornikDugme{
+        display: inline;
+        margin-right: 15px;
+    }
+    .IzbornikStavka{
+        border-bottom: 1px solid rgb(54,126,228);
+    }
+
+    #wrapper{
+        width: 100%;
+        margin:0px;
+    }
+    .VilaKolonaWrapper{
+        width: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    Ime
+    <input oninput="btnDownloadSve()" type="text" id="ime">
+    <button onclick="btnDownloadSve()">Pretraži</button>
+    <div style="border:solid; width: 300px">
+         <strong>Id</strong> <div id="id"></div>
+          <strong>Ime</strong> <div id="Ime"></div> 
+          <strong>Plata</strong> <div id="plata"></div>
+           <strong>Starost</strong> <div id="starost"></div>
+         </div>
+         <div style="border:solid; width: 300px">
+         <strong>Id</strong> <div><input type="text" id="id_update"></div>
+                 <strong>Ime</strong> <div><input type="text" id="ime_update"></div>
+                 <strong>Plata</strong> <div><input type="text" id="plata_update"></div>
+                  <strong>Starost</strong> <div><input type="text" id="starost_update"></div>
+                  <button onclick="BtnUpdate()">Izmjeni</button>
+                  <button onclick="BtnDodaj()">Dodaj</button>
+                </div>
+     <table id="tabelaID" border="1px">
+     <tr>
+          <th>Id</th>
+         <th>Ime</th> 
+         <th>Plata</th>
+          <th>Starost</th>
+         </tr>
+     </table> <div id="upozorenjeDiv" style="color:red"></div>
+</body>
+</html>

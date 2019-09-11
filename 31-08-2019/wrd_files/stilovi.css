@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#lijevo{
+height: 100%;
+width: 100%;
+background-color: black;
+color:white;
+padding:30px 30px 0px 20px;
+overflow-y: scroll;
+}
+#formaneka{
+    height: 50%;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+#forma input,#forma button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid blue;
+    background-color: black;
+    color: gray;
+}
+#forma button{
+    color: white;
+    margin: 5px 0px;
+}
+#tabelaDesno{
+    height: 50%;
+    padding-bottom: 15px;
+    table-layout: auto;
+  width: 100%;  
+  overflow: auto;
+}
+th,td{
+    font-size: 15px;
+}
+td button{
+    width: 100%;
+}
+#desno{
+height: 100%;
+width:100%;
+}
+#tabelaLijevo, #tabelaDesno{
+   white-space: nowrap;
+}
+#gornji{
+    height: 50%;
+    background-image: url('../img/jezero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#gornji nav{
+    width: 30%;
+    height: 100%;
+    color: white;
+    background-color: rgb(58, 134, 247);
+    opacity: 0.6;
+    padding: 0px 20px;
+}
+#donji{
+    height: 50%;
+    width: 100%;
+}
+.IzbornikStavka{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding:8px;
+}
+.footer{
+    text-align: center;
+    margin-top:15px;
+}
+#Izbornik{
+    margin-right: 70px;
+}
+.IzbornikStavka:hover{
+    cursor: pointer;
+    background-color: rgb(137, 181, 247);
+}
+@media only screen and (max-width:600px){
+
+    #wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #desno{
+        height: auto;
+        position: relative;
+    }
+  #gornji{
+      height: auto;
+  }
+   #donji{
+       height: auto;
+       position: absolute;
+       top:660px;
+   }
+   td,th{
+       font-size: 13px;
+   }
+#gornji nav{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+}
+#Izbornik{
+    text-align: center;
+}
+a.IzbornikStavka{
+    display: inline-block;
+}
+#formaneka{
+    height: 90%;
+}
+}

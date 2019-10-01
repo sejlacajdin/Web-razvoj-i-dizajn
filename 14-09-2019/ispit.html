@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./wrd_files/stilovi.css">
+  <script src="./external/jquery/jquery.js"></script>
+  <script src="./jquery-validation-1.16.0/dist/jquery.validate.js"></script>
+  <title>WRD ispit</title>
+
+</head>
+<body> 
+<div id="wrapper">
+
+  <div id="lijevo">
+    <nav>
+      <div style="text-align: left;font-size:30px;padding: 15px; padding-left:25px;">
+          <a id="IzbornikDugme">☰</a><span>BROJ INDEXA</span>
+      </div>
+    
+       <div id="Izbornik" style="clear:both" class="">
+      <a class="IzbornikStavka" href="#">Home</a> 
+      <a class="IzbornikStavka" href="#">AMF 1</a> 
+      <a class="IzbornikStavka" href="#">AMF 2</a> 
+      <a class="IzbornikStavka" href="#">AMF 3</a> 
+      <div style="clear:both;"></div>
+    </div>
+    </nav>
+  
+</div>
+
+
+<div id="desno" >
+<div id="gornji">
+  <div class="table">
+      <table id="tabelaGore" style="width: 100%;table-layout:auto; ">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Likes</th>
+                <th>Naziv</th>
+                <th>Slika</th>
+                <th>cijena/m2</th>
+                <th>Like</th>
+                <th>Odaberi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>11</td>
+              <td>626</td>
+              <td>Prozor profil A</td>
+              <td></td>
+              <td>100</td>
+              <td><button>Like</button></td>
+              <td><button>Odaberi</button></td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+      <div id="srednji">
+        <form id="forma" onsubmit="return false;" novalidate="novalidate" style="padding: 0;margin: 0;">
+          <label  for="dostavaIme">Ime i prezime</label>
+          <input id="dostavaIme" name="dostavaIme" placeholder="kupac ime"><br>
+  
+          <label for="dostavaAdresa">Adresa</label>
+          <input id="dostavaAdresa" name="dostavaAdresa" placeholder="kupac adresa"><br>
+  
+          <label for="dostavaGrad">Grad</label>
+          <input id="dostavaGrad" name="dostavaGrad" placeholder="kupac grad" value=""><br>
+  
+          <label for="dostavaTelefon">Telefon</label>
+          <input id="dostavaTelefon" name="dostavaTelefon" placeholder="+387-61-888-8888"><br>
+  
+      
+          <label for="proizvodID">ID Proizvoda</label>
+          <input id="proizvodID" name="proizvodID" placeholder="ID_Proizvoda"><br>
+  
+          <label for="nazivProizvoda">Naziv Proizvoda</label>
+          <input id="nazivProizvoda" name="nazivProizvoda" placeholder="Naziv Proizvoda"><br>
+  
+      
+          <label for="Kolicina">Kolicina</label>
+          <input id="kolicina" name="kolicina" placeholder="Kolicina"><br>
+  
+          <label for="Opcija">Opcija</label>
+          <select id="opcija">
+            <option>siva boja neprovidno staklo</option>
+          </select>
+  
+
+          <br>
+          <input type="submit" id="naruci" value="Naruči" style="width:100%;">
+        </form>       
+    </div>
+
+
+<div id="donji">
+  <div class="table">
+    <table id="tabelaDolje" style="width: 100%;table-layout:auto;">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Naziv</th>
+              <th>Cijena</th>
+              <th>Kolicina</th>
+              <th>Iznos</th>
+              <th>Ime</th>
+              <th>Adresa</th>
+              <th>Datum</th>
+              <th>Telefon</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Prozor profil A</td>
+            <td>100</td>
+            <td>1</td>
+            <td>100</td>
+            <td>Elmir Babovic</td>
+            <td>Mostar</td>
+            <td>2019-09-04</td>
+            <td>+222-22-222-2223</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+</div>
+</div>
+</div>
+
+<script src="./wrd_files/script.js"></script>
+
+
+
+
+</body></html>
